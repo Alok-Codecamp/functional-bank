@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bank website</title>
+    <!-- tailwind css  -->
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-4xl text-center mt-8">
+        Let's get
+        <span class="font-semibold text-purple-600">some moooney!</span>
+      </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+      <section class="mt-8">
+        <div class="grid grid-cols-3 gap-4">
+          <div class="bg-blue-400 p-8 rounded text-white">
+            <h3 class="text-2xl">Diposit</h3>
+            <h4 class="text-4xl">$<span id="diposit-blance">00</span></h4>
+          </div>
+          <div class="bg-green-300 p-8 rounded text-white">
+            <h3 class="text-2xl">Withraw</h3>
+            <h4 class="text-4xl">$<span id="withdraw-alance">00</span></h4>
+          </div>
+          <div class="bg-yellow-400 p-8 rounded text-white">
+            <h3 class="text-2xl">Balance</h3>
+            <h4 class="text-4xl">$<span id="main-balance">1000</span></h4>
+          </div>
+        </div>
+      </section>
+      <!-- diposit and withrdraw -->
+      <section class="mt-8">
+        <div class="grid grid-cols-2 gap-4">
+          
+            <div class="bg-red-100 p-8 rounded">
+              <h3 class="text-2xl">Please diposite</h3>
+              <div>
+                <input
+                  id="diposit-input"
+                  class="border-2 border-gray-400 rounded block w-3/4 mb-4 px-4"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="$ amount you want to diposit"
+                />
+
+                <button
+                  id="diposite-bt"
+                  class="
+                    bg-yellow-600
+                    p-2
+                    rounded
+                    text-white
+                    font-medium
+                    mx-auto
+                  "
+                >
+                  diposit
+                </button>
+              </div>
+            </div>
+            <div class="bg-purple-100 p-8 rounded ">
+              <h3 class="text-2xl">please withdraw</h3>
+              <div>
+                <input
+                  id="withdraw-input"
+                  class="border-2 border-gray-400 rounded block w-3/4 mb-4 px-4"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="$ amount you want to withrdraw"
+                />
+  
+                <button
+                  id="withdraw-bt"
+                  class="bg-yellow-600 p-2 rounded text-white font-medium mx-auto"
+                >
+                  withrdraw
+                </button>
+            </div>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <h1></h1>
+
+    <script src="js/banking.js"></script>
+  </body>
+</html>
